@@ -16,7 +16,13 @@ body {
 /* = keyframes */
 @keyframes slide {
     from {
-        width: 0%;
+        width: 1px;
+        height: 0px;
+        
+    }
+    
+    20%{
+        width: 1px; height: 200px;
     }
 
     to {
@@ -94,7 +100,7 @@ header {
     background-position: bottom;
     width: 100%;
     height: 200px;
-    animation: slide 1500ms ease-out;
+    animation: slide 2000ms ease-out;
 }
 
 .header-box {
