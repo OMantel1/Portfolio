@@ -1,3 +1,11 @@
+/*
+couleurs:
+blanc: whitesmoke;
+gris foncé: #1B1D1F;
+gris: grey;
+
+*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +17,26 @@ body {
     max-width: 1024px;
     width: 100%;
     margin: auto;
+}
+
+#btn {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-color: whitesmoke;
+    border: none;
+    box-shadow: 0px 0px 5px #1B1D1F;
+    margin: 34px;
+    text-align: center;
+}
+
+.fa-angle-up {
+    color: grey;
+    font-size: 30px;
+    padding-top: 10px;
 }
 
 
@@ -175,4 +203,5 @@ footer {
         color: whitesmoke;
         animation: hidde 1800ms ease-out;
     }
+
 }
