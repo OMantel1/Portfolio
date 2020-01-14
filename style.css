@@ -1,104 +1,186 @@
-/*
-couleurs:
-blanc: whitesmoke;
-gris foncé: #1B1D1F;
-gris: grey;
-
-*/
-
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: lato, sans-serif;
-    font-weight: 300;
-    max-width: 1024px;
-    width: 100%;
-    margin: auto;
+  margin: 0;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
 }
 
 #btn {
-    display: none;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    background-color: whitesmoke;
-    border: none;
-    box-shadow: 0px 0px 5px #1B1D1F;
-    margin: 34px;
-    text-align: center;
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 0px 0px 5px #1B1D1F;
+  margin: 34px;
+  text-align: center;
 }
 
 .fa-angle-up {
-    color: grey;
-    font-size: 30px;
-    padding-top: 10px;
+  color: grey;
+  font-size: 30px;
+  padding-top: 10px;
 }
-
-
 
 /* = keyframes */
 @keyframes slide {
-    from {
-        width: 100%;
-    }
-
-    18% {
-        width: 1%;
-    }
-
-    to {
-        width: 100%;
-    }
+  from {
+    width: 100%;
+  }
+  18% {
+    width: 1%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes hidde {
-    from {
-        color: transparent;
-        text-shadow: none;
-    }
-
-    80% {
-        color: transparent;
-        text-shadow: none;
-    }
-
-    to {
-        color: whitesmoke;
-    }
+  from {
+    color: transparent;
+    text-shadow: none;
+  }
+  80% {
+    color: transparent;
+    text-shadow: none;
+  }
+  to {
+    color: whitesmoke;
+  }
 }
 
-
-
-
-a {
-    padding: 0px 10px;
-    text-decoration: none;
-    color: grey;
-    padding: 5px 20px;
+/* = menu */
+.nav__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0px;
 }
 
-a:hover {
-    color: #1B1D1F;
-    text-shadow: 0px 0px 12px grey;
-
+.nav__box__link {
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: grey;
+  padding: 0px 10px;
+  text-decoration: none;
+  padding: 5px 20px;
 }
 
-p,
-.portfolio-title,
-.projets-box-title,
-a {
-    font-family: lato, sans-serif;
-    font-weight: 300;
-    text-align: center;
-    color: grey;
+.nav__box__link:hover {
+  color: #1B1D1F;
+  text-shadow: 0px 0px 12px grey;
 }
 
-.header-title {
+/* = header */
+header {
+  text-align: center;
+  background-image: url("img/nature-sky-sunset-the-mountains-66997.jpg");
+  background-position: bottom;
+  width: 100%;
+  height: 200px;
+  animation: slide 1700ms ease-out;
+}
+
+.header__box {
+  display: flex;
+  justify-content: center;
+}
+
+.header__title {
+  padding-top: 55px;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  text-shadow: 0px 0px 10px #0A2937;
+  text-align: center;
+  color: whitesmoke;
+  animation: hidde 1800ms ease-out;
+}
+
+/* = Portfolio */
+.portfolio__title {
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: grey;
+}
+
+/* projets */
+.projets {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.projets__box {
+  width: 320px;
+  height: 400px;
+  box-shadow: 0px 0px 8px grey;
+  margin: 30px;
+  transform: scale(1);
+  transition: transform 400ms, opacity 700ms;
+}
+
+.projets__box:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+.projets__box__title, .projets__box__text {
+  color: dimgrey;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: grey;
+}
+
+a img {
+  display: block;
+  width: 300px;
+  height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* = Footer */
+.contact {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 30px 0px;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 8px grey;
+}
+
+.contact__link {
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: grey;
+  padding: 0px 10px;
+  text-decoration: none;
+  padding: 5px 20px;
+}
+
+.contact__link:hover {
+  color: #1B1D1F;
+  text-shadow: 0px 0px 12px grey;
+}
+
+/* = Media queries */
+@media screen and (max-width: 425px) {
+  .header__title {
     padding-top: 55px;
     font-family: lato, sans-serif;
     font-weight: 300;
@@ -106,102 +188,5 @@ a {
     text-align: center;
     color: whitesmoke;
     animation: hidde 1800ms ease-out;
-}
-
-
-
-/* = menu */
-.nav-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px 0px;
-}
-
-
-/* = header */
-header {
-    text-align: center;
-    background-image: url("img/nature-sky-sunset-the-mountains-66997.jpg");
-    background-position: bottom;
-    width: 100%;
-    height: 200px;
-    animation: slide 1700ms ease-out;
-}
-
-.header-box {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-
-
-/* = Portfolio */
-.projets {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.projets-box-title,
-p {
-    color: dimgrey;
-
-}
-
-.projets-box {
-    width: 320px;
-    height: 400px;
-    box-shadow: 0px 0px 8px grey;
-    margin: 30px;
-    transform: scale(1);
-    transition: transform 400ms, opacity 700ms;
-}
-
-
-.projets-box:hover {
-    opacity: 0.7;
-    transform: scale(1.03);
-
-}
-
-a img {
-    display: block;
-    width: 300px;
-    height: 225px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-/* = Footer */
-
-footer {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    margin: 30px 0px;
-    padding: 20px 0px;
-    box-shadow: 0px 0px 8px grey;
-}
-
-
-
-/* = Media queries */
-@media screen and (max-width: 425px) {
-    .header-title {
-        padding-top: 55px;
-        font-family: lato, sans-serif;
-        font-weight: 300;
-        text-shadow: 0px 0px 10px #0A2937;
-        text-align: center;
-        color: whitesmoke;
-        animation: hidde 1800ms ease-out;
-    }
-
+  }
 }
