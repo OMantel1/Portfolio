@@ -40,6 +40,24 @@ body {
     }
 }
 
+.stack__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+    padding: 0;
+
+    &__items {
+        list-style: none;
+        background-color: grey;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 16px;
+    }
+}
+
+
 #btn {
     display: none;
     position: fixed;
@@ -121,7 +139,7 @@ body {
 
 
 /* = Portfolio */
-.portfolio__title {
+.portfolio__title, .stack__title  {
     font-family: lato, sans-serif;
     font-weight: 300;
     text-align: center;
