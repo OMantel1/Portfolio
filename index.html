@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
 
     <!-- style -->
     <link rel="stylesheet" href="style.css">
@@ -22,82 +23,92 @@
 
 <body>
 
-    <!-- top menu ( acceuil, projets réalisés, projets hors etudes, liens)-->
-    <nav class="nav__box">
-        <a class="nav__box__link" href="#portfolio">Portfolio</a>
-        <a class="nav__box__link" href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank" rel="noopener" rel="noopener">CV</a>
-        <a class="nav__box__link" href="#contact">Contact</a>
-    </nav>
+    <header class="headerBox">
+        <section>
+            <h1 class="headerBox__title"> <span class="colored">PORTFOLIO </span><span class="border">DEVELOPPEUR
+                    WEB</span></h1>
+            <p class="headerBox__text">Olivier Mantel</p>
+        </section>
 
-    <!-- header -->
-    <div class="header__box">
-        <header>
-            <h1 class="header__title">Olivier Mantel - Développeur web</h1>
-        </header>
-    </div>
+        <nav class="nav__box">
+            <a class="nav__box__link" href="#projets">Projets</a>
+            <a class="nav__box__link" href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank"
+                rel="noopener" rel="noopener">CV</a>
+            <a class="nav__box__link" href="#contact">Contact</a>
+        </nav>
+    </header>
 
     <div id="btn"><i class="fas fa-angle-up"></i></div>
-
+ 
     <!-- projets réalisés -->
-    <section id="portfolio">
-        <h2 class="portfolio__title">PORTFOLIO</h2>
+    <section id="projets">
+        <h2 class="portfolio__title">PROJETS</h2>
         <div class="projets">
 
-           
-             <article class="projets__box">
+
+            <article class="projets__box">
                 <h3 class="projets__box__title">Calculatrice js</h3>
                 <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Calculatrice-js/" target="_blank" rel="noopener"><img src="img/portfolio-capture-calc.png" alt="calculatrice"> </a>
+                    <a href="https://omantel1.github.io/Calculatrice-js/" target="_blank" rel="noopener"><img
+                            src="img/portfolio-capture-calc.png" alt="calculatrice"> </a>
                 </div>
-                <p class="projets__box__text" >Projet personnel</p>
+                <p class="projets__box__text">Projet personnel</p>
             </article>
-            
+
             <article class="projets__box">
                 <h3 class="projets__box__title">Site vitrine pour sage-femme</h3>
                 <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Site-Vitrine-SageFemme/" target="_blank" rel="noopener"><img src="img/portfolio-site-vitrine-sage-femme.png" alt="site vitrine"> </a>
+                    <a href="https://omantel1.github.io/Site-Vitrine-SageFemme/" target="_blank" rel="noopener"><img
+                            src="img/portfolio-site-vitrine-sage-femme.png" alt="site vitrine"> </a>
                 </div>
-                <p class="projets__box__text" >Projet personnel</p>
+                <p class="projets__box__text">Projet personnel</p>
             </article>
 
             <article class="projets__box">
                 <h3 class="projets__box__title">Menus aléatoires en Js</h3>
                 <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Generateur-de-menu-js/" target="_blank" rel="noopener"><img src="img/portfolio-capture-Genjs.png" alt="generateur de menu en javascript"> </a>
+                    <a href="https://omantel1.github.io/Generateur-de-menu-js/" target="_blank" rel="noopener"><img
+                            src="img/portfolio-capture-Genjs.png" alt="generateur de menu en javascript"> </a>
                 </div>
-                <p class="projets__box__text" >Projet personnel - Générateur de menus</p>
+                <p class="projets__box__text">Projet personnel - Générateur de menus</p>
             </article>
 
             <article class="projets__box">
                 <h3 class="projets__box__title">Optimisation d'un site web</h3>
                 <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Projet-LCA/" target="_blank" rel="noopener"><img src="img/portfolio-capture-lca.png" alt="projet lca"> </a>
+                    <a href="https://omantel1.github.io/Projet-LCA/" target="_blank" rel="noopener"><img
+                            src="img/portfolio-capture-lca.png" alt="projet lca"> </a>
                 </div>
-                <p class="projets__box__text" >Projet de formation - Amélioration Seo et accessibilité d'un site web</p>
+                <p class="projets__box__text">Projet de formation - Amélioration Seo et accessibilité d'un site web</p>
             </article>
 
             <article class="projets__box">
                 <h3 class="projets__box__title">Réalisation d'un cv</h3>
                 <div>
-                    <a href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank" rel="noopener"><img src="img/portfolio-capture-cv.png" alt="cv réalisé en html css"> </a>
+                    <a href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank" rel="noopener"><img
+                            src="img/portfolio-capture-cv.png" alt="cv réalisé en html css"> </a>
                 </div>
-                <p class="projets__box__text" >Projet personnel - Réalisation d'un cv en html</p>
+                <p class="projets__box__text">Projet personnel - Réalisation d'un cv en html</p>
             </article>
 
             <article class="projets__box">
                 <h3 class="projets__box__title">Gestionnaire de contact</h3>
                 <div>
-                    <a href="https://github.com/OMantel1/Exercice_Javascript1/blob/master/js/contacts.js" target="_blank" rel="noopener"><img src="img/portfolio-capture-js.png" alt="exercice javascript"> </a>
+                    <a href="https://github.com/OMantel1/Exercice_Javascript1/blob/master/js/contacts.js"
+                        target="_blank" rel="noopener"><img src="img/portfolio-capture-js.png"
+                            alt="exercice javascript"> </a>
                 </div>
-                <p class="projets__box__text" >Exercice de formation - gestionnaire de contact en javascript</p>
+                <p class="projets__box__text">Exercice de formation - gestionnaire de contact en javascript</p>
             </article>
 
             <article class="projets__box">
                 <h3 class="projets__box__title">Animations css</h3>
                 <div>
-                    <a href="https://omantel1.github.io/p3_ohmyfood/" target="_blank" rel="noopener"><img src="img/portfolio-capture-menus.png" alt="menu de restaurant"> </a>
+                    <a href="https://omantel1.github.io/p3_ohmyfood/" target="_blank" rel="noopener"><img
+                            src="img/portfolio-capture-menus.png" alt="menu de restaurant"> </a>
                 </div>
-                <p class="projets__box__text" >Projet de formation - Utilisation d'animations css pour un site de restauration</p>
+                <p class="projets__box__text">Projet de formation - Utilisation d'animations css pour un site de
+                    restauration</p>
             </article>
         </div>
     </section>
@@ -107,10 +118,13 @@
         <a class="contact__link" href="mailto:oliviermantel@gmail.com "> Oliviermantel@gmail.com</a>
         <a class="contact__link" href="http://linkedin.com/in/OlivierMantel" target="_blank" rel="noopener">Linkedin</a>
         <a class="contact__link" href="https://github.com/OMantel1" target="_blank" rel="noopener">Github</a>
-        <a class="contact__link" href="https://www.codewars.com/users/Omantel1" target="_blank" rel="noopener">CodeWars</a>
+        <a class="contact__link" href="https://www.codewars.com/users/Omantel1" target="_blank"
+            rel="noopener">CodeWars</a>
     </footer>
 
     <script src="js/anim.js" type="text/javascript">
     </script>
 
-</body></html>
+</body>
+
+</html>
