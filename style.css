@@ -96,7 +96,8 @@ body {
 
 .stack__list__items {
   list-style: none;
-  background-color: #ebebeb;
+  background-color: white;
+  border: solid 1px #dedede;
   padding: 10px;
   margin: 10px;
   border-radius: 16px;
