@@ -178,9 +178,9 @@ a img {
   text-align: center;
   width: 100%;
   height: auto;
-  margin: 30px 0px;
+  margin: 0px 0px;
   padding: 20px 0px;
-  box-shadow: 0px 0px 8px #546E7A;
+  background-color: #ebebeb;
 }
 
 .contact__link {
@@ -188,14 +188,13 @@ a img {
   font-weight: 300;
   text-align: center;
   color: #546E7A;
-  padding: 0px 10px;
+  margin: 0px 30px;
   text-decoration: none;
-  padding: 5px 20px;
 }
 
 .contact__link:hover {
   color: #1B1D1F;
-  text-shadow: 0px 0px 12px #546E7A;
+  border-bottom: 1px solid #1B1D1F;
 }
 
 /* = Media queries */
