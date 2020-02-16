@@ -197,14 +197,16 @@ a img {
 }
 
 /* = Media queries */
-@media screen and (max-width: 425px) {
-  .header__title {
-    padding-top: 55px;
-    font-family: lato, sans-serif;
-    font-weight: 300;
-    text-shadow: 0px 0px 10px #0A2937;
+@media screen and (max-width: 760px) {
+  .headerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .headerBox__title {
     text-align: center;
-    color: whitesmoke;
-    animation: hidde 1800ms ease-out;
+  }
+  .headerBox__text {
+    text-align: center;
   }
 }
