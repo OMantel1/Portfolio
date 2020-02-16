@@ -5,7 +5,6 @@ $link-hover : #1B1D1F;
 $background-color: rgb(235, 235, 235);
 
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10Px;
-    background-color: grey;
+    background-color: $background-color;
 
     &__title {
         color: $header-title;
@@ -41,21 +40,28 @@ body {
     }
 }
 
-.stack__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 150px;
-    padding: 0;
+.nav__box {
+    padding: 10px;
 
-    &__items {
-        list-style: none;
-        background-color: grey;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 16px;
+    &__link {
+        margin: 0 10px;
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+            color: $link-hover;
+            border-bottom: 1px solid $link-hover;
+        }
     }
+}
+
+.colored {
+    color: rgb(0, 153, 255);
+}
+
+.border {
+    text-shadow: 0 0 2px darken($text-color, 50%);
+
 }
 
 
@@ -79,73 +85,32 @@ body {
     padding-top: 10px;
 }
 
-
-
-/* = keyframes */
-@keyframes slide {
-    from {
-        width: 100%;
-    }
-
-    18% {
-        width: 1%;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes hidde {
-    from {
-        color: transparent;
-        text-shadow: none;
-    }
-
-    80% {
-        color: transparent;
-        text-shadow: none;
-    }
-
-    to {
-        color: whitesmoke;
-    }
-}
-
-
-/* = menu */
-.nav__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px 0px;
-
-    &__link {
-        font-family: lato, sans-serif;
-        font-weight: 300;
-        text-align: center;
-        color: $link;
-        padding: 0px 10px;
-        text-decoration: none;
-        padding: 5px 20px;
-
-        &:hover {
-            color: $link-hover;
-            text-shadow: 0px 0px 12px $text-color;
-        }
-
-    }
-}
-
-
-
-/* = Portfolio */
-.portfolio__title, .stack__title  {
+/* = TITLES */
+.portfolio__title,
+.stack__title {
     font-family: lato, sans-serif;
     font-weight: 300;
     text-align: center;
     color: $text-color;
+    margin-top: 70px;
 
+}
+
+.stack__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+    padding: 0;
+
+    &__items {
+        list-style: none;
+        background-color: $background-color;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 16px;
+    }
 }
 
 /* projets */

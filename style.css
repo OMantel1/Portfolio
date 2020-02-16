@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10Px;
-  background-color: grey;
+  background-color: #ebebeb;
 }
 
 .headerBox__title {
@@ -32,21 +32,27 @@ body {
   text-transform: uppercase;
 }
 
-.stack__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 150px;
-  padding: 0;
+.nav__box {
+  padding: 10px;
 }
 
-.stack__list__items {
-  list-style: none;
-  background-color: grey;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 16px;
+.nav__box__link {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #546E7A;
+}
+
+.nav__box__link:hover {
+  color: #1B1D1F;
+  border-bottom: 1px solid #1B1D1F;
+}
+
+.colored {
+  color: #0099ff;
+}
+
+.border {
+  text-shadow: 0 0 2px black;
 }
 
 #btn {
@@ -69,62 +75,31 @@ body {
   padding-top: 10px;
 }
 
-/* = keyframes */
-@keyframes slide {
-  from {
-    width: 100%;
-  }
-  18% {
-    width: 1%;
-  }
-  to {
-    width: 100%;
-  }
+/* = TITLES */
+.portfolio__title,
+.stack__title {
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: #546E7A;
+  margin-top: 70px;
 }
 
-@keyframes hidde {
-  from {
-    color: transparent;
-    text-shadow: none;
-  }
-  80% {
-    color: transparent;
-    text-shadow: none;
-  }
-  to {
-    color: whitesmoke;
-  }
-}
-
-/* = menu */
-.nav__box {
+.stack__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin: 30px 0px;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 150px;
+  padding: 0;
 }
 
-.nav__box__link {
-  font-family: lato, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  color: #546E7A;
-  padding: 0px 10px;
-  text-decoration: none;
-  padding: 5px 20px;
-}
-
-.nav__box__link:hover {
-  color: #1B1D1F;
-  text-shadow: 0px 0px 12px #546E7A;
-}
-
-/* = Portfolio */
-.portfolio__title, .stack__title {
-  font-family: lato, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  color: #546E7A;
+.stack__list__items {
+  list-style: none;
+  background-color: #ebebeb;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 16px;
 }
 
 /* projets */
