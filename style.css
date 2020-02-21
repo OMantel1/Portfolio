@@ -170,21 +170,21 @@ a img {
   height: auto;
   margin: 0px 0px;
   padding: 20px 0px;
-  background-color: white;
+  background-color: #353535;
 }
 
 .contact__link {
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #546E7A;
+  color: #f8f8f8;
   margin: 0px 30px;
   text-decoration: none;
 }
 
 .contact__link:hover {
-  color: #1B1D1F;
-  border-bottom: 1px solid #1B1D1F;
+  color: #f8f8f8;
+  border-bottom: 1px solid #f8f8f8;
 }
 
 /* = Media queries */

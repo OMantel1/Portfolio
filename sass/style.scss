@@ -183,19 +183,19 @@ a img {
     height: auto;
     margin: 0px 0px;
     padding: 20px 0px;
-    background-color: white;
+    background-color: rgb(53, 53, 53);
 
     &__link {
         font-family: lato, sans-serif;
         font-weight: 300;
         text-align: center;
-        color: $link;
+        color: rgb(248, 248, 248);
         margin: 0px 30px;
         text-decoration: none;
 
         &:hover {
-            color: $link-hover;
-            border-bottom: 1px solid $link-hover;
+            color: rgb(248, 248, 248);
+            border-bottom: 1px solid rgb(248, 248, 248);
         }
     }
 }
