@@ -118,10 +118,10 @@ body {
         padding: 10px;
         margin: 10px;
         border-radius: 16px;
-        transition: transform 400ms ease-in-out;
+        transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 
         &:hover {
-            transform: rotate(1turn);
+            // transform: rotate(1turn);
             background-color: rgb(0, 153, 255);
             color: white;
         }

@@ -107,11 +107,10 @@ body {
   padding: 10px;
   margin: 10px;
   border-radius: 16px;
-  transition: transform 400ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
 .stack__list__items:hover {
-  transform: rotate(1turn);
   background-color: #0099ff;
   color: white;
 }
