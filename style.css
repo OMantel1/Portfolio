@@ -18,7 +18,7 @@ body {
 }
 
 .headerBox__title {
-  color: whitesmoke;
+  color: white;
   font-size: 2em;
   margin-bottom: 5px;
 }
@@ -160,7 +160,7 @@ a img {
   height: auto;
   margin: 0px 0px;
   padding: 20px 0px;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .contact__link {

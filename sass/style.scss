@@ -25,7 +25,7 @@ body {
     padding: 0px 10Px;
 
     &__title {
-        color: $header-title;
+        color: white;
         font-size: 2em;
         margin-bottom: 5px;
     }
@@ -173,7 +173,7 @@ a img {
     height: auto;
     margin: 0px 0px;
     padding: 20px 0px;
-    background-color: $background-color;
+    background-color: white;
 
     &__link {
         font-family: lato, sans-serif;
