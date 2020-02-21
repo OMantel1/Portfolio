@@ -33,7 +33,7 @@ body {
 
     &__text {
         margin-top: 0;
-        color: $text-color;
+        color: lighten($text-color, 5%);
         font-weight: 900;
         font-size: larger;
         text-transform: uppercase;
