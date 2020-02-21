@@ -26,7 +26,7 @@ body {
 
 .headerBox__text {
   margin-top: 0;
-  color: #546E7A;
+  color: #324147;
   font-weight: 900;
   font-size: larger;
   text-transform: uppercase;
@@ -40,7 +40,7 @@ body {
 .nav__box__link {
   margin: 0 10px;
   text-decoration: none;
-  color: #546E7A;
+  color: #324147;
 }
 
 .nav__box__link:hover {
@@ -82,7 +82,7 @@ body {
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #546E7A;
+  color: #324147;
   letter-spacing: 2px;
 }
 
@@ -132,7 +132,7 @@ body {
 .projets__box {
   width: 320px;
   height: 400px;
-  box-shadow: 0px 0px 1px #546E7A;
+  box-shadow: 0px 0px 1px #324147;
   margin: 30px;
   transform: scale(1);
   transition: transform 400ms, opacity 200ms;
@@ -142,18 +142,18 @@ body {
 .projets__box:hover {
   opacity: 1;
   transform: scale(1.03);
-  box-shadow: 0px 0px 8px #546E7A;
+  box-shadow: 0px 0px 8px #324147;
 }
 
 .projets__box__title {
-  color: #546E7A;
+  color: #324147;
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
 .projets__box__text {
-  color: #546E7A;
+  color: #324147;
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -182,7 +182,7 @@ a img {
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #546E7A;
+  color: #324147;
   margin: 0px 30px;
   text-decoration: none;
 }
