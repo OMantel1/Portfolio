@@ -172,21 +172,22 @@ a img {
   height: auto;
   margin: 0px 0px;
   padding: 20px 0px;
-  background-color: #353535;
+  background-color: #fafafa;
+  border: solid 1px #ededed;
 }
 
 .contact__link {
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #f8f8f8;
+  color: #546E7A;
   margin: 0px 30px;
   text-decoration: none;
 }
 
 .contact__link:hover {
-  color: #f8f8f8;
-  border-bottom: 1px solid #f8f8f8;
+  color: #1B1D1F;
+  border-bottom: 1px solid #1B1D1F;
 }
 
 /* = Media queries */
