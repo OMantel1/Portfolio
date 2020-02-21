@@ -109,6 +109,10 @@ body {
 }
 
 /* projets */
+#projets {
+  padding-top: 50px;
+}
+
 .projets {
   display: flex;
   flex-direction: row;
