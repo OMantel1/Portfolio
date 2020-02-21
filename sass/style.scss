@@ -98,6 +98,8 @@ body {
 
 .stack {
     padding-top: 50px;
+    background-color: $background-color;
+    border: solid 1px darken($background-color, 5%)
 }
 
 .stack__list {
