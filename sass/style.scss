@@ -28,6 +28,7 @@ body {
         color: white;
         font-size: 2em;
         margin-bottom: 5px;
+        letter-spacing: 2px;
     }
 
     &__text {
@@ -36,6 +37,7 @@ body {
         font-weight: 900;
         font-size: larger;
         text-transform: uppercase;
+        letter-spacing: 3px;
     }
 }
 
@@ -94,9 +96,10 @@ body {
 
 }
 
-.stack{
+.stack {
     padding-top: 50px;
 }
+
 .stack__list {
     display: flex;
     justify-content: center;
@@ -123,9 +126,10 @@ body {
 }
 
 /* projets */
-#projets{
+#projets {
     padding-top: 50px;
 }
+
 .projets {
     display: flex;
     flex-direction: row;
