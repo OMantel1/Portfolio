@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10Px;
-  background-color: #ebebeb;
+  background-color: #fafafa;
 }
 
 .headerBox__title {
@@ -96,7 +96,7 @@ body {
 .stack__list__items {
   list-style: none;
   background-color: white;
-  border: solid 1px #dedede;
+  border: solid 1px #ededed;
   padding: 10px;
   margin: 10px;
   border-radius: 16px;
@@ -161,7 +161,7 @@ a img {
   height: auto;
   margin: 0px 0px;
   padding: 20px 0px;
-  background-color: #ebebeb;
+  background-color: #fafafa;
 }
 
 .contact__link {
