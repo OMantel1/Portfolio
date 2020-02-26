@@ -15,23 +15,27 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10Px;
-  background-color: #fafafa;
+  background-color: #5C7C9A;
 }
 
 .headerBox__title {
-  color: white;
-  font-size: 2em;
+  color: #222527;
+  font-weight: bold;
+  font-size: 37px;
+  font-style: normal;
+  line-height: 27px;
   margin-bottom: 5px;
-  letter-spacing: 2px;
 }
 
 .headerBox__text {
   margin-top: 0;
-  color: #3d4f56;
-  font-weight: 900;
-  font-size: larger;
+  color: #323232;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.42em;
   text-transform: uppercase;
-  letter-spacing: 3px;
 }
 
 .nav__box {
@@ -41,20 +45,18 @@ body {
 .nav__box__link {
   margin: 0 10px;
   text-decoration: none;
-  color: #324147;
+  color: white;
 }
 
 .nav__box__link:hover {
-  color: #1B1D1F;
-  border-bottom: 1px solid #1B1D1F;
+  border-bottom: 1px solid white;
 }
 
 .colored {
-  color: #0099ff;
-}
-
-.border {
-  text-shadow: 0 0 2px black;
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 0.04em;
 }
 
 #btn {
@@ -81,10 +83,11 @@ body {
 .portfolio__title,
 .stack__title {
   font-family: lato, sans-serif;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: lighter;
   text-align: center;
-  color: #3d4f56;
-  letter-spacing: 2px;
+  color: #6A6A6A;
+  letter-spacing: 0.2em;
 }
 
 .show {
@@ -97,7 +100,7 @@ body {
 
 .stack {
   background-color: white;
-  border: solid 1px #ededed;
+  border-bottom: solid 1px #cfcfcf;
 }
 
 .stack__list {
@@ -112,7 +115,7 @@ body {
 .stack__list__items {
   list-style: none;
   background-color: white;
-  border: solid 1px #ededed;
+  border: solid 1px #cfcfcf;
   padding: 10px;
   margin: 10px;
   border-radius: 16px;
@@ -120,13 +123,13 @@ body {
 }
 
 .stack__list__items:hover {
-  background-color: #0099ff;
+  background-color: #5C7C9A;
   color: white;
 }
 
 /* projets */
-/* projets */
-#projets, .stack {
+#projets,
+.stack {
   padding-top: 30px;
 }
 
@@ -141,7 +144,7 @@ body {
 .projets__box {
   width: 320px;
   height: 400px;
-  box-shadow: 0px 0px 1px #324147;
+  box-shadow: 0px 0px 1px #323232;
   margin: 30px;
   transform: scale(1);
   transition: transform 400ms, opacity 200ms;
@@ -151,18 +154,18 @@ body {
 .projets__box:hover {
   opacity: 1;
   transform: scale(1.03);
-  box-shadow: 0px 0px 8px #324147;
+  box-shadow: 0px 0px 2px #323232;
 }
 
 .projets__box__title {
-  color: #324147;
+  color: #323232;
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
 .projets__box__text {
-  color: #324147;
+  color: #323232;
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -183,24 +186,25 @@ a img {
   height: auto;
   margin: 0px 0px;
   padding: 20px 0px;
-  background-color: #fafafa;
-  border: solid 1px #ededed;
+  background-color: #5C7C9A;
+  border: solid 1px #526f8a;
 }
 
 .contact__link {
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #475c65;
+  color: #323232;
   margin: 0px 30px;
   text-decoration: none;
 }
 
 .contact__link:hover {
-  color: #1B1D1F;
+  color: #222527;
 }
 
-.fab, .far {
+.fab,
+.far {
   font-size: 25px;
   text-decoration: none;
 }

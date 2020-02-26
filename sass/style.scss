@@ -1,8 +1,8 @@
-$header-title: whitesmoke;
-$link : #546E7A;
-$text-color : rgb(50, 65, 71);
-$link-hover : #1B1D1F;
-$background-color: rgb(250, 250, 250);
+$black-color: #222527;
+$lightBlack-color : #323232;
+$grey-color: #6A6A6A;
+$border: rgb(207, 207, 207);
+$main-color: #5C7C9A;
 
 html {
     scroll-behavior: smooth;
@@ -22,22 +22,27 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10Px;
-    background-color: $background-color;
+    background-color: $main-color;
 
     &__title {
-        color: white;
-        font-size: 2em;
+
+        color: $black-color;
+        font-weight: bold;
+        font-size: 37px;
+        font-style: normal;
+        line-height: 27px;
         margin-bottom: 5px;
-        letter-spacing: 2px;
     }
 
     &__text {
         margin-top: 0;
-        color: lighten($text-color, 5%);
-        font-weight: 900;
-        font-size: larger;
+        color: #323232;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.42em;
         text-transform: uppercase;
-        letter-spacing: 3px;
     }
 }
 
@@ -47,23 +52,22 @@ body {
     &__link {
         margin: 0 10px;
         text-decoration: none;
-        color: $text-color;
+        color: white;
 
         &:hover {
-            color: $link-hover;
-            border-bottom: 1px solid $link-hover;
+
+            border-bottom: 1px solid white;
         }
     }
 }
 
 .colored {
-    color: rgb(0, 153, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: 0.04em;
 }
 
-.border {
-    text-shadow: 0 0 2px darken($text-color, 50%);
-
-}
 
 
 #btn {
@@ -90,10 +94,11 @@ body {
 .portfolio__title,
 .stack__title {
     font-family: lato, sans-serif;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: lighter;
     text-align: center;
-    color: lighten($text-color, 5%);
-    letter-spacing: 2px;
+    color: $grey-color;
+    letter-spacing: 0.2em;
 
 }
 
@@ -107,7 +112,7 @@ body {
 
 .stack {
     background-color: white;
-    border: solid 1px darken($background-color, 5%);
+    border-bottom: solid 1px $border;
 
 }
 
@@ -122,7 +127,7 @@ body {
     &__items {
         list-style: none;
         background-color: white;
-        border: solid 1px darken($background-color, 5%);
+        border: solid 1px $border;
         padding: 10px;
         margin: 10px;
         border-radius: 16px;
@@ -130,15 +135,15 @@ body {
 
         &:hover {
             // transform: rotate(1turn);
-            background-color: rgb(0, 153, 255);
+            background-color: $main-color;
             color: white;
         }
     }
 }
 
 /* projets */
-/* projets */
-#projets, .stack {
+#projets,
+.stack {
     padding-top: 30px;
 }
 
@@ -153,7 +158,7 @@ body {
     &__box {
         width: 320px;
         height: 400px;
-        box-shadow: 0px 0px 1px $text-color;
+        box-shadow: 0px 0px 1px $lightBlack-color;
         margin: 30px;
         transform: scale(1);
         transition: transform 400ms, opacity 200ms;
@@ -162,18 +167,18 @@ body {
         &:hover {
             opacity: 1;
             transform: scale(1.03);
-            box-shadow: 0px 0px 8px $text-color;
+            box-shadow: 0px 0px 2px $lightBlack-color;
         }
 
         &__title {
-            color: $text-color;
+            color: $lightBlack-color;
             font-family: lato, sans-serif;
             font-weight: 300;
             text-align: center;
         }
 
         &__text {
-            color: $text-color;
+            color: $lightBlack-color;
             font-family: lato, sans-serif;
             font-weight: 300;
             text-align: center;
@@ -197,23 +202,25 @@ a img {
     height: auto;
     margin: 0px 0px;
     padding: 20px 0px;
-    background-color: $background-color;
-    border: solid 1px darken($background-color, 5%);
+    background-color: $main-color;
+    border: solid 1px darken($main-color, 5%);
 
     &__link {
         font-family: lato, sans-serif;
         font-weight: 300;
         text-align: center;
-        color: lighten($text-color, 10%);
+        color: $lightBlack-color;
         margin: 0px 30px;
         text-decoration: none;
 
         &:hover {
-            color: $link-hover;
+            color: $black-color;
         }
     }
 }
-.fab, .far{
+
+.fab,
+.far {
     font-size: 25px;
     text-decoration: none;
 }
