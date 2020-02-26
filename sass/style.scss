@@ -204,17 +204,19 @@ a img {
         font-family: lato, sans-serif;
         font-weight: 300;
         text-align: center;
-        color: $text-color;
+        color: lighten($text-color, 10%);
         margin: 0px 30px;
         text-decoration: none;
 
         &:hover {
             color: $link-hover;
-            border-bottom: 1px solid $link-hover
         }
     }
 }
-
+.fab, .far{
+    font-size: 25px;
+    text-decoration: none;
+}
 
 /* = Media queries */
 @media screen and (max-width: 776px) {
