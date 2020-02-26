@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10Px;
+  background-color: #fafafa;
 }
 
 .headerBox__title {
@@ -86,8 +87,16 @@ body {
   letter-spacing: 2px;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 .stack {
-  background-color: #fafafa;
+  background-color: white;
   border: solid 1px #ededed;
 }
 
@@ -115,6 +124,7 @@ body {
   color: white;
 }
 
+/* projets */
 /* projets */
 #projets, .stack {
   padding-top: 30px;

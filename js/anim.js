@@ -21,3 +21,12 @@ button.addEventListener("click", function topReturn() {
     document.documentElement.scrollTop = 0;
 
 });
+
+
+let stackLink = document.querySelector(".stackLink");
+let stack = document.querySelector(".stack");
+stackLink.addEventListener("click", function (Event) {
+    Event.preventDefault();
+    stack.classList.toggle("hide");
+    stack.classList.toggle("show");
+});
