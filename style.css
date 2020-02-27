@@ -92,17 +92,27 @@ body {
   letter-spacing: 0.2em;
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 .stack {
   background-color: white;
-  border-bottom: solid 1px #cfcfcf;
+  height: 150px;
+  overflow: hidden;
+  transition: 700ms;
+}
+
+@media screen and (max-width: 776px) {
+  .stack {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .stack {
+    height: 360px;
+  }
+}
+
+.toggle {
+  height: 0px;
 }
 
 .stack__list {
@@ -110,7 +120,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 70px;
   padding: 0;
 }
 
@@ -130,8 +139,7 @@ body {
 }
 
 /* projets */
-#projets,
-.stack {
+#projets {
   padding-top: 30px;
 }
 
