@@ -104,19 +104,13 @@ body {
 
 .stack {
     background-color: white;
-    height: 150px;
+    max-height: 360px;
     overflow: hidden;
-    transition: 700ms;
-    @media screen and (max-width: 776px){
-        height: 200px;
-    }
-    @media screen and (max-width: 424px){
-        height: 360px;
-    }
+    transition: max-height 700ms;
 }
 
 .toggle{
-    height: 0px;
+    max-height: 0px;
 }
 
 .stack__list {
