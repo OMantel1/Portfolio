@@ -23,7 +23,7 @@ body {
 .headerBox__title {
   color: #222527;
   font-weight: bold;
-  font-size: 37px;
+  font-size: 33px;
   font-style: normal;
   line-height: 27px;
   margin-bottom: 5px;
@@ -34,7 +34,7 @@ body {
   color: #323232;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.42em;
   text-transform: uppercase;
@@ -48,6 +48,7 @@ body {
   margin: 0 10px;
   text-decoration: none;
   color: white;
+  font-size: 14px;
 }
 
 .nav__box__link:hover {
@@ -57,7 +58,7 @@ body {
 .colored {
   color: white;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 19px;
   letter-spacing: 0.04em;
 }
 
@@ -77,7 +78,7 @@ body {
 
 .fa-angle-up {
   color: grey;
-  font-size: 30px;
+  font-size: 28px;
   padding-top: 10px;
 }
 
@@ -85,7 +86,7 @@ body {
 .portfolio__title,
 .stack__title {
   font-family: lato, sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: lighter;
   text-align: center;
   color: #6A6A6A;
@@ -112,6 +113,7 @@ body {
 }
 
 .stack__list__items {
+  font-size: 14px;
   list-style: none;
   background-color: white;
   border: solid 1px #cfcfcf;
@@ -140,6 +142,7 @@ body {
 }
 
 .projets__box {
+  font-size: 13px;
   width: 320px;
   height: 400px;
   box-shadow: 0px 0px 1px #323232;
