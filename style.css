@@ -1,10 +1,14 @@
 html {
   scroll-behavior: smooth;
+  font-size: 62.4%;
 }
 
 body {
   margin: 0;
-  font-family: lato, sans-serif;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("img/abstract-1850424_1920.jpg");
+  background-attachment: fixed;
   font-weight: 300;
   width: 100%;
   margin: auto;
@@ -17,13 +21,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10Px;
-  background-color: #5C7C9A;
+  background-color: #222527;
 }
 
 .headerBox__title {
-  color: #222527;
+  color: #34D1BF;
   font-weight: bold;
-  font-size: 33px;
+  font-size: 3.3rem;
   font-style: normal;
   line-height: 27px;
   margin-bottom: 5px;
@@ -31,10 +35,10 @@ body {
 
 .headerBox__text {
   margin-top: 0;
-  color: #323232;
+  color: white;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 21px;
   letter-spacing: 0.42em;
   text-transform: uppercase;
@@ -47,18 +51,19 @@ body {
 .nav__box__link {
   margin: 0 10px;
   text-decoration: none;
-  color: white;
-  font-size: 14px;
+  color: #34D1BF;
+  font-size: 1.4rem;
 }
 
 .nav__box__link:hover {
+  color: white;
   border-bottom: 1px solid white;
 }
 
 .colored {
   color: white;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 1.9rem;
   letter-spacing: 0.04em;
 }
 
@@ -78,7 +83,7 @@ body {
 
 .fa-angle-up {
   color: grey;
-  font-size: 28px;
+  font-size: 2.8rem;
   padding-top: 10px;
 }
 
@@ -86,11 +91,18 @@ body {
 .portfolio__title,
 .stack__title {
   font-family: lato, sans-serif;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: lighter;
   text-align: center;
-  color: #6A6A6A;
   letter-spacing: 0.2em;
+}
+
+.portfolio__title {
+  color: white;
+}
+
+.stack__title {
+  color: #222527;
 }
 
 .stack {
@@ -110,10 +122,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
+  color: #222527;
 }
 
 .stack__list__items {
-  font-size: 14px;
+  font-size: 1.4rem;
   list-style: none;
   background-color: white;
   border: solid 1px #cfcfcf;
@@ -124,7 +137,7 @@ body {
 }
 
 .stack__list__items:hover {
-  background-color: #5C7C9A;
+  background-color: #34D1BF;
   color: white;
 }
 
@@ -142,7 +155,7 @@ body {
 }
 
 .projets__box {
-  font-size: 13px;
+  font-size: 1.3rem;
   width: 320px;
   height: 400px;
   box-shadow: 0px 0px 1px #323232;
@@ -150,6 +163,7 @@ body {
   transform: scale(1);
   transition: transform 400ms, opacity 200ms;
   opacity: 0.8;
+  background-color: #222527;
 }
 
 .projets__box:hover {
@@ -159,14 +173,14 @@ body {
 }
 
 .projets__box__title {
-  color: #323232;
+  color: white;
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
 .projets__box__text {
-  color: #323232;
+  color: white;
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
@@ -186,26 +200,26 @@ a img {
   height: auto;
   margin: 0px 0px;
   padding: 20px 0px;
-  background-color: #5C7C9A;
-  border: solid 1px #526f8a;
+  background-color: #222527;
+  border: solid 1px #161819;
 }
 
 .contact__link {
   font-family: lato, sans-serif;
   font-weight: 300;
   text-align: center;
-  color: #323232;
+  color: #34D1BF;
   margin: 0px 30px;
   text-decoration: none;
 }
 
 .contact__link:hover {
-  color: #222527;
+  color: white;
 }
 
 .fab,
 .far {
-  font-size: 25px;
+  font-size: 2.5rem;
   text-decoration: none;
 }
 

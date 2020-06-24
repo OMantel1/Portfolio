@@ -1,16 +1,22 @@
 $black-color: #222527;
 $lightBlack-color : #323232;
-$grey-color: #6A6A6A;
+$grey-color: #949494;
 $border: rgb(207, 207, 207);
-$main-color: #5C7C9A;
+$main-color: #222527;
+$green-color: #34D1BF;
+$tangerine-color: #E99C86;
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.4%;
 }
 
 body {
     margin: 0;
-    font-family: lato, sans-serif;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("img/abstract-1850424_1920.jpg");
+    background-attachment: fixed;
     font-weight: 300;
     width: 100%;
     margin: auto;
@@ -24,13 +30,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10Px;
-    background-color: $main-color;
+    background-color: $black-color;
 
     &__title {
 
-        color: $black-color;
+        color: $green-color;
         font-weight: bold;
-        font-size: 33px;
+        font-size: 3.3rem;
         font-style: normal;
         line-height: 27px;
         margin-bottom: 5px;
@@ -38,10 +44,11 @@ body {
 
     &__text {
         margin-top: 0;
-        color: #323232;
+        // color: #323232;
+        color: white;
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 21px;
         letter-spacing: 0.42em;
         text-transform: uppercase;
@@ -54,11 +61,11 @@ body {
     &__link {
         margin: 0 10px;
         text-decoration: none;
-        color: white;
-        font-size: 14px;
+        color: $green-color;
+        font-size: 1.4rem;
 
         &:hover {
-
+        color:white;
             border-bottom: 1px solid white;
         }
     }
@@ -67,7 +74,7 @@ body {
 .colored {
     color: white;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.9rem;
     letter-spacing: 0.04em;
 }
 
@@ -87,7 +94,7 @@ body {
 
 .fa-angle-up {
     color: grey;
-    font-size: 28px;
+    font-size: 2.8rem;
     padding-top: 10px;
 }
 
@@ -95,12 +102,18 @@ body {
 .portfolio__title,
 .stack__title {
     font-family: lato, sans-serif;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: lighter;
     text-align: center;
-    color: $grey-color;
+    // color: white;
+    // background-color: white;
     letter-spacing: 0.2em;
-
+}
+.portfolio__title{
+    color: white;
+}
+.stack__title{
+    color: $black-color;
 }
 
 .stack {
@@ -120,9 +133,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
+    color: $black-color;
 
     &__items {
-        font-size: 14px;
+        font-size: 1.4rem;
         list-style: none;
         background-color: white;
         border: solid 1px $border;
@@ -133,7 +147,7 @@ body {
 
         &:hover {
             // transform: rotate(1turn);
-            background-color: $main-color;
+            background-color: $green-color;
             color: white;
         }
     }
@@ -154,7 +168,7 @@ body {
 
 
     &__box {
-        font-size: 13px;
+        font-size: 1.3rem;
         width: 320px;
         height: 400px;
         box-shadow: 0px 0px 1px $lightBlack-color;
@@ -162,6 +176,7 @@ body {
         transform: scale(1);
         transition: transform 400ms, opacity 200ms;
         opacity: 0.8;
+        background-color: $black-color;
 
         &:hover {
             opacity: 1;
@@ -170,14 +185,14 @@ body {
         }
 
         &__title {
-            color: $lightBlack-color;
+            color: white;
             font-family: lato, sans-serif;
             font-weight: 300;
             text-align: center;
         }
 
         &__text {
-            color: $lightBlack-color;
+            color: white;
             font-family: lato, sans-serif;
             font-weight: 300;
             text-align: center;
@@ -208,19 +223,20 @@ a img {
         font-family: lato, sans-serif;
         font-weight: 300;
         text-align: center;
-        color: $lightBlack-color;
+        color: $green-color;
         margin: 0px 30px;
         text-decoration: none;
 
         &:hover {
-            color: $black-color;
+            color: white;
+            
         }
     }
 }
 
 .fab,
 .far {
-    font-size: 25px;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 
