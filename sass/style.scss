@@ -12,16 +12,21 @@ html {
 }
 
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url("img/abstract-1850424_1920.jpg");
+    background-color: $black-color;
+    // background-image: url("img/abstract-1850424_1920.jpg");
     background-attachment: fixed;
     font-weight: 300;
     width: 100%;
     margin: auto;
     max-width: 1440px;
     border: $border solid 1px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 // = HEADER
@@ -56,7 +61,7 @@ body {
 }
 
 .nav__box {
-    padding: 10px;
+    padding: 10px 30px 10px 10px;
 
     &__link {
         margin: 0 10px;
@@ -65,7 +70,7 @@ body {
         font-size: 1.4rem;
 
         &:hover {
-        color:white;
+            color: white;
             border-bottom: 1px solid white;
         }
     }
@@ -109,10 +114,12 @@ body {
     // background-color: white;
     letter-spacing: 0.2em;
 }
-.portfolio__title{
+
+.portfolio__title {
     color: white;
 }
-.stack__title{
+
+.stack__title {
     color: $black-color;
 }
 
@@ -123,7 +130,7 @@ body {
     transition: max-height 700ms;
 }
 
-.toggle{
+.toggle {
     max-height: 0px;
 }
 
@@ -146,78 +153,21 @@ body {
         transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 
         &:hover {
-            // transform: rotate(1turn);
             background-color: $green-color;
             color: white;
         }
     }
 }
 
-/* projets */
-#projets{
-    padding-top: 30px;
-}
-
-.projets {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    
-
-
-    &__box {
-        font-size: 1.3rem;
-        width: 320px;
-        height: 400px;
-        box-shadow: 0px 0px 1px $lightBlack-color;
-        margin: 30px;
-        transform: scale(1);
-        transition: transform 400ms, opacity 200ms;
-        opacity: 0.8;
-        background-color: $black-color;
-
-        &:hover {
-            opacity: 1;
-            transform: scale(1.03);
-            box-shadow: 0px 0px 2px $lightBlack-color;
-        }
-
-        &__title {
-            color: white;
-            font-family: lato, sans-serif;
-            font-weight: 300;
-            text-align: center;
-        }
-
-        &__text {
-            color: white;
-            font-family: lato, sans-serif;
-            font-weight: 300;
-            text-align: center;
-        }
-    }
-}
-
-
-a img {
-    display: block;
-    width: 300px;
-    // height: 225px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* = Footer */
 .contact {
+    box-sizing: border-box;
     text-align: center;
     width: 100%;
     height: auto;
-    margin: 0px 0px;
+    margin: 0;
     padding: 20px 0px;
-    background-color: $main-color;
-    border: solid 1px darken($main-color, 5%);
 
     &__link {
         font-family: lato, sans-serif;
@@ -229,7 +179,7 @@ a img {
 
         &:hover {
             color: white;
-            
+
         }
     }
 }
@@ -238,6 +188,97 @@ a img {
 .far {
     font-size: 2.5rem;
     text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+.link {
+    font-size: 1rem;
+    padding: 2px 16px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.link-website {
+    color: $black-color;
+    background-color: $green-color;
+    border: $green-color solid 1px;
+
+    &:hover {
+        background-color: white;
+        border: white solid 1px;
+    }
+}
+
+.link-github {
+    background-color: $black-color;
+    border: $green-color solid 1px;
+    color: $green-color;
+
+    &:hover {
+        color: white;
+        border: white solid 1px;
+    }
+}
+
+
+
+#main {
+    flex: 1;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    width: 80%;
+    margin: auto;
+   opacity: 0.9;
+    padding: 32px 0;
+}
+
+.project {
+    box-sizing: border-box;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+
+    :hover {
+        opacity: 0.90;
+        transform: opacity;
+    }
+
+    &-overlay {
+        box-sizing: border-box;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        font-size: 1.2rem;
+        background-color: $black-color;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: 200ms ease-in-out;
+    }
+
+    &_links {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &_description {
+        color: white;
+        text-align: center;
+    }
 }
 
 /* = Media queries */

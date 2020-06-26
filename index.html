@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
 
     <!-- style -->
     <link rel="stylesheet" href="style.css">
@@ -29,10 +30,12 @@
         </section>
 
         <nav class="nav__box">
+            <!-- <a class="nav__box__link stackLink" href="">Accueil.</a> -->
             <a class="nav__box__link stackLink" href="">Stack.</a>
             <a class="nav__box__link" href="#projets">Projets.</a>
-            <a class="nav__box__link" href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank" rel="noopener" rel="noopener">CV.</a>
-            <a class="nav__box__link" href="#contact">Contact.</a>
+            <a class="nav__box__link" href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank"
+                rel="noopener" rel="noopener">CV.</a>
+            <!-- <a class="nav__box__link" href="#contact">Contact.</a> -->
         </nav>
     </header>
 
@@ -50,120 +53,150 @@
                 <li class="stack__list__items">Git</li>
                 <li class="stack__list__items">MongoDb</li>
                 <li class="stack__list__items">Bases de Sql</li>
-
-                <!-- <li class="stack__list__items">bases de Jquery</li> -->
-                <!-- <li class="stack__list__items">Webpack</li> -->
-                <!-- <li class="stack__list__items">Gulp</li> -->
-
             </ul>
         </div>
     </section>
+    <div id="main">
 
+        <!-- projets réalisés -->
+        <section id="projects-container">
 
-    <!-- projets réalisés -->
-    <section id="projets">
-        <h2 class="portfolio__title">PROJETS</h2>
-        <div class="projets">
-
-
-            <article class="projets__box">
-                <h3 class="projets__box__title">Réseau social<br>Javascript, Vue.js, Node.js <br>Express, Sequelize, Sql</h3>
-                <div class="projet__box__capture">
-                    <a href="https://github.com/OMantel1/64497812RS" target="_blank" rel="noopener"><img src="img/portfolio-capture-ReseauSocial.png" alt="Api"> </a>
+            <article class="project">
+                <img src="img/groupomania-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Réseau social</h3>
+                        <p>Javascript</p>
+                        <p>Node.js</p>
+                        <p>Vue.js</p>
+                        <p>Express</p>
+                        <p>Sequelize</p>
+                        <p>Sql</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/OMantel1/64497812RS" class="link link-github target=" _blank" rel="noopener""> VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet de formation</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Api pour une application <br> d'avis gastronomiques <br>Node.js, Express, MongoDb</h3>
-                <div class="projet__box__capture">
-                    <a href="https://github.com/OMantel1/DWP6" target="_blank" rel="noopener"><img src="img/portfolio-capture-Api.png" alt="Api"> </a>
+            <article class=" project">
+                <img src="img/lca-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Amélioration Seo / Accessibilité</h3>
+                        <p>Seo</p>
+                        <p>Html / Css</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://omantel1.github.io/Projet-LCA/index.html" class="link link-website" target="_blank" rel="noopener">VOIR LE SITE</a>
+                        <a href=" https://github.com/OMantel1/Projet-LCA" class="link link-github" target="_blank" rel="noopener">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet de formation</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Site e-commerce <br>Html, Css, Javascript</h3>
-                <div class="projet__box__capture">
-                    <a href="https://github.com/OMantel1/DWP5" target="_blank" rel="noopener"><img src="img/portfolio-capture-oriteddies.png" alt="Site E-commerce"> </a>
+            <article class="project">
+                <img src="img/oriteddies-2-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Site E-commerce Front</h3>
+                        <p>Javascript</p>
+                        <p>Node.js</p>
+                        <p>Express</p>
+                        <p>MongoDb</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/OMantel1/DWP5" class="link link-github" target="_blank" rel="noopener">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet de formation</p> -->
             </article>
 
-            <!-- <article class="projets__box">
-                <h3 class="projets__box__title">Mini jeu js</h3>
-                <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/CatchTheMouse/" target="_blank" rel="noopener"><img src="img/portfolio-capture-mouse.png" alt="mini jeu js"> </a>
+            <article class="project">
+                <img src="img/sage-femme-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Site vitrine sage-femme</h3>
+                        <p>Spa</p>
+                        <p>Html, Css</p>
+                        <p>Sass</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://omantel1.github.io/Site-Vitrine-SageFemme/" class="link link-website" target="_blank" rel="noopener">VOIR LE SITE</a>
+                        <a href="https://github.com/OMantel1/Site-Vitrine-SageFemme" class="link link-github" target="_blank" rel="noopener">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <p class="projets__box__text">Projet personnel</p>
-            </article> -->
-
-            <article class="projets__box">
-                <h3 class="projets__box__title">Calculatrice js</h3>
-                <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Calculatrice-js/" target="_blank" rel="noopener"><img src="img/portfolio-capture-calc.png" alt="calculatrice"> </a>
-                </div>
-                <!-- <p class="projets__box__text">Projet personnel</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Site vitrine pour sage-femme</h3>
-                <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Site-Vitrine-SageFemme/" target="_blank" rel="noopener"><img src="img/portfolio-site-vitrine-sage-femme.png" alt="site vitrine"> </a>
+            <article class="project">
+                <img src="img/Sauce-piquante-2-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Api pour une application d'avis gastronomiques</h3>
+                        <p>Node.js</p>
+                        <p>Express</p>
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/OMantel1/DWP6" class="link link-github" target="_blank" rel="noopener">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet personnel</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Menus aléatoires en Js</h3>
-                <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Generateur-de-menu-js/" target="_blank" rel="noopener"><img src="img/portfolio-capture-Genjs.png" alt="generateur de menu en javascript"> </a>
+            <article class="project">
+                <img src="img/portfolio-capture-calc-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Calculatrice Javascript</h3>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/OMantel1/Calculatrice-js" class="link link-github" target="_blank" rel="noopener">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet personnel - Générateur de menus</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Optimisation d'un site web <br> Amélioration Seo et accessibilité</h3>
-                <div class="projet__box__capture">
-                    <a href="https://omantel1.github.io/Projet-LCA/" target="_blank" rel="noopener"><img src="img/portfolio-capture-lca.png" alt="projet lca"> </a>
+            <article class="project">
+                <img src="img/generateur-de-menus-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Générateur de menus</h3>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://omantel1.github.io/Generateur-de-menu-js/" class="link link-website"
+                            target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/Generateur-de-menu-js" class="link link-github" target="_blank" rel="noopener">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet de formation - Amélioration Seo et accessibilité d'un site web</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Réalisation d'un cv</h3>
-                <div>
-                    <a href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank" rel="noopener"><img src="img/portfolio-capture-cv.png" alt="cv réalisé en html css"> </a>
+            <article class="project">
+                <img src="img/cv-full-square.png" alt="">
+                <div class="project-overlay">
+                    <div class="project_description">
+                        <h3>Cv</h3>
+                        <p>Html, Css</p>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://omantel1.github.io/Cv-Olivier-Mantel/" class="link link-website"
+                            target="_blank" rel="noopener">VOIR LE SITE</a>
+                        <a href="https://github.com/OMantel1/Cv-Olivier-Mantel" class="link link-github">VOIR LE CODE</a>
+                    </div>
                 </div>
-                <!-- <p class="projets__box__text">Projet personnel - Réalisation d'un cv en html</p> -->
             </article>
 
-            <article class="projets__box">
-                <h3 class="projets__box__title">Gestionnaire de contact<br> Javascript</h3>
-                <div>
-                    <a href="https://github.com/OMantel1/Exercice_Javascript1/blob/master/js/contacts.js" target="_blank" rel="noopener"><img src="img/portfolio-capture-js.png" alt="exercice javascript"> </a>
-                </div>
-                <!-- <p class="projets__box__text">Exercice de formation - gestionnaire de contact en javascript</p> -->
-            </article>
-
-            <article class="projets__box">
-                <h3 class="projets__box__title">Animations css</h3>
-                <div>
-                    <a href="https://omantel1.github.io/p3_ohmyfood/" target="_blank" rel="noopener"><img src="img/portfolio-capture-menus.png" alt="menu de restaurant"> </a>
-                </div>
-                <!-- <p class="projets__box__text">Projet de formation - Utilisation d'animations css pour un site de -->
-                    <!-- restauration</p> -->
-            </article>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <!-- footer -->
     <footer id="contact" class="contact">
-        <a class="contact__link" href="http://linkedin.com/in/OlivierMantel" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a class="contact__link" href="http://linkedin.com/in/OlivierMantel" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin"></i></a>
         <a class="contact__link" href="mailto:oliviermantel@gmail.com "> <i class="far fa-envelope"></i></a>
-        <a class="contact__link" href="https://github.com/OMantel1" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a class="contact__link" href="https://github.com/OMantel1" target="_blank" rel="noopener"><i
+                class="fab fa-github"></i></a>
 
     </footer>
+
+
 
     <script src="js/anim.js" type="text/javascript">
     </script>
