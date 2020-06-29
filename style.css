@@ -35,6 +35,7 @@ body {
   font-style: normal;
   line-height: 27px;
   margin-bottom: 5px;
+  animation: opacity 800ms;
 }
 
 .headerBox__text {
@@ -46,10 +47,12 @@ body {
   line-height: 21px;
   letter-spacing: 0.42em;
   text-transform: uppercase;
+  animation: opacity 1000ms;
 }
 
 .nav__box {
   padding: 10px 30px 10px 10px;
+  animation: slide 800ms;
 }
 
 .nav__box__link {
@@ -113,7 +116,8 @@ body {
   background-color: white;
   max-height: 360px;
   overflow: hidden;
-  transition: max-height 700ms;
+  opacity: 1;
+  transition: max-height 1000ms ease-in-out;
 }
 
 .toggle {
@@ -143,6 +147,42 @@ body {
 .stack__list__items:hover {
   background-color: #34D1BF;
   color: white;
+}
+
+.stackLink {
+  animation: opacity 800ms;
+}
+
+.p8 {
+  animation: opacity 1600ms;
+}
+
+.p7 {
+  animation: opacity 1800ms;
+}
+
+.p6 {
+  animation: opacity 2000ms;
+}
+
+.p5 {
+  animation: opacity 2200ms;
+}
+
+.p4 {
+  animation: opacity 2400ms;
+}
+
+.p3 {
+  animation: opacity 2600ms;
+}
+
+.p2 {
+  animation: opacity 2800ms;
+}
+
+.p1 {
+  animation: opacity 3000ms;
 }
 
 /* = Footer */
@@ -205,6 +245,30 @@ img {
 .link-github:hover {
   color: white;
   border: white solid 1px;
+}
+
+/* animations */
+@keyframes slide {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #main {
