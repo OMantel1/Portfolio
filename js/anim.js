@@ -1,8 +1,11 @@
 window.onscroll = function () {
-    scrollReveal()
+    scrollReveal();
+    footerAnimationOnReveal();
 };
 
 let button = document.getElementById("btn");
+let footer = document.getElementById("contact");
+
 
 // affiche button de retour si viewport > 425
 function scrollReveal() {
@@ -29,3 +32,25 @@ stackLink.addEventListener("click", function (Event) {
     Event.preventDefault();
     stack.classList.toggle("toggle");
 });
+
+
+//is an element visible in the viewport?
+function isElementInViewport(element) {
+    let elementBouding = element.getBoundingClientRect();
+    let clientHeight = document.documentElement.clientHeight;
+    // console.log(elementBouding.top);
+    // console.log(clientHeight);
+    if (clientHeight > elementBouding.bottom) {
+        return true
+    } else {
+        return false;
+    }
+}
+
+function footerAnimationOnReveal(){
+    if(isElementInViewport(footer)){
+        footer.classList.add("footerAnim");
+    } else {
+        footer.classList.remove("footerAnim");
+    }
+}

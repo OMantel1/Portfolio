@@ -257,6 +257,11 @@ img {
     }
 }
 
+.footerAnim {
+    animation: opacityReveal 400ms;
+
+}
+
 /* animations */
 @keyframes slide {
     0% {
@@ -271,9 +276,25 @@ img {
 }
 
 
+
+
 @keyframes opacity {
     0% {
         opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacityReveal {
+    0% {
+        opacity: 1;
     }
 
     50% {
