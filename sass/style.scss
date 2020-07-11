@@ -6,6 +6,7 @@ $main-color: #222527;
 $green-color: #34D1BF;
 $tangerine-color: #E99C86;
 
+
 html {
     scroll-behavior: smooth;
     font-size: 62.4%;
@@ -17,8 +18,6 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: $black-color;
-    // background-image: url("img/abstract-1850424_1920.jpg");
-    background-attachment: fixed;
     font-weight: 300;
     width: 100%;
     margin: auto;
@@ -29,13 +28,16 @@ body {
     min-height: 100vh;
 }
 
+
+
 // = HEADER
 .headerBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10Px;
+    padding: 0px 10px;
     background-color: $black-color;
+    z-index: 100;
 
     &__title {
         color: $green-color;
@@ -49,7 +51,6 @@ body {
 
     &__text {
         margin-top: 0;
-        // color: #323232;
         color: white;
         font-style: normal;
         font-weight: bold;
@@ -70,6 +71,7 @@ body {
         text-decoration: none;
         color: $green-color;
         font-size: 1.4rem;
+
         &:hover {
             color: white;
             border-bottom: 1px solid white;
@@ -86,35 +88,71 @@ body {
     letter-spacing: 0.04em;
 }
 
-#btn {
-    display: none;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
-    background-color: whitesmoke;
-    border: none;
-    box-shadow: 0px 0px 5px #1B1D1F;
-    margin: 34px;
-    text-align: center;
+// #btn {
+//     display: none;
+//     position: fixed;
+//     right: 0;
+//     bottom: 0;
+//     width: 30px;
+//     height: 30px;
+//     background-color: whitesmoke;
+//     border: none;
+//     box-shadow: 0px 0px 5px #1B1D1F;
+//     margin: 34px;
+//     text-align: center;
+// }
+
+// .fa-angle-up {
+//     color: grey;
+//     font-size: 2.8rem;
+//     padding-top: 0px;
+// }
+
+
+/* = Weclome section */
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    top: -99px;
+    z-index: 50;
+    background-color: $black-color;
+
+    @media (max-width: 768px) {
+        top: -137px;
+    }
+
+    @media (max-width: 425px) {
+        top: -169px;
+    }
+
 }
 
-.fa-angle-up {
-    color: grey;
-    font-size: 2.8rem;
-    padding-top: 10px;
+.welcome h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    animation: opacity 1300ms;
+    background: linear-gradient(90deg, lighten($green-color, 15%), darken($green-color, 25%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+
 
 /* = TITLES */
 .portfolio__title,
-.stack__title {
+.stack__title,
+.work__title {
     font-family: lato, sans-serif;
     font-size: 2.8rem;
     font-weight: lighter;
     text-align: center;
-    // color: white;
-    // background-color: white;
     letter-spacing: 0.2em;
 }
 
@@ -122,20 +160,38 @@ body {
     color: white;
 }
 
-.stack__title {
-    color: $black-color;
+.work__title {
+    color: $green-color;
 }
 
+
+/*** = Stack ***/
 .stack {
-    background-color: white;
-    max-height: 360px;
-    overflow: hidden;
+    // background-color: $black-color;
+    background: repeating-linear-gradient(
+        -45deg, 
+        $black-color 0px, $black-color 40px, rgb(41, 41, 41) 40px , black 80px) ;
+    color: $green-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 75;
     opacity: 1;
-    transition: max-height 1000ms ease-in-out;
+    transition: opacity 600ms ease-in-out;
+
+    @media (max-width: 320px) {
+        top: 60px;
+    }
+
 }
 
 .toggle {
-    max-height: 0px;
+    opacity: 0;
 }
 
 .stack__list {
@@ -144,182 +200,37 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
-    color: $black-color;
+    color: white;
 
     &__items {
         font-size: 1.4rem;
         list-style: none;
-        background-color: white;
-        border: solid 1px $border;
         padding: 10px;
         margin: 10px;
         border-radius: 16px;
-        transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
-
-        &:hover {
-            background-color: $green-color;
-            color: white;
-        }
     }
 }
 
-.stackLink{
+.stackLink {
     animation: opacity 800ms;
 }
 
-.p8{
-    animation: opacity 1600ms;
-}
-.p7{
-    animation: opacity 1800ms;
-}
-.p6{
-    animation: opacity 2000ms;
-}
-.p5{
-    animation: opacity 2200ms;
-}
-.p4{
-    animation: opacity 2400ms;
-}
-.p3{
-    animation: opacity 2600ms;
-}
-.p2{
-    animation: opacity 2800ms;
-}
-.p1{
-    animation: opacity 3000ms;
-}
 
 
-/* = Footer */
-.contact {
-    box-sizing: border-box;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 20px 0px;
-
-    &__link {
-        font-family: lato, sans-serif;
-        font-weight: 300;
-        text-align: center;
-        color: $green-color;
-        margin: 0px 30px;
-        text-decoration: none;
-
-        &:hover {
-            color: white;
-
-        }
-    }
-}
-
-.fab,
-.far {
-    font-size: 2.5rem;
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-}
-
-
-.link {
-    font-size: 1rem;
-    padding: 2px 16px;
-    margin: 0 8px;
-    text-decoration: none;
-}
-
-.link-website {
-    color: $black-color;
-    background-color: $green-color;
-    border: $green-color solid 1px;
-
-    &:hover {
-        background-color: white;
-        border: white solid 1px;
-    }
-}
-
-.link-github {
-    background-color: $black-color;
-    border: $green-color solid 1px;
-    color: $green-color;
-
-    &:hover {
-        color: white;
-        border: white solid 1px;
-    }
-}
-
-.footerAnim {
-    animation: opacityReveal 400ms;
-
-}
-
-/* animations */
-@keyframes slide {
-    0% {
-        transform: translateX(-500px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes opacityReveal {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
+/*** = Projects ***/
 #main {
     flex: 1;
-
 }
 
-#projects-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 1rem;
     width: 80%;
     margin: auto;
-    opacity: 0.9;
+    opacity: 0;
     padding: 32px 0;
+    transition: opacity 600ms ease-in-out;
 }
 
 .project {
@@ -363,6 +274,113 @@ img {
     }
 }
 
+/* = Footer */
+.contact {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0px;
+
+    &__link {
+        font-family: lato, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: $green-color;
+        margin: 0px 30px;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+
+        }
+    }
+
+    @media (max-width: 320px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        ;
+    }
+}
+
+.fab,
+.far {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+.link {
+    font-size: 1rem;
+    padding: 2px 16px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.link-website {
+    color: $black-color;
+    background-color: $green-color;
+    border: $green-color solid 1px;
+
+    &:hover {
+        background-color: white;
+        border: white solid 1px;
+    }
+}
+
+.link-github {
+    background-color: $black-color;
+    border: $green-color solid 1px;
+    color: $green-color;
+
+    &:hover {
+        color: white;
+        border: white solid 1px;
+    }
+}
+
+.revealAnimation {
+    transition: opacity 800ms ease-in-out;
+    transition-delay: 100ms;
+    opacity: 0.9;
+}
+
+/* = animations */
+@keyframes slide {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 /* = Media queries */
 @media screen and (max-width: 776px) {
     .headerBox {
@@ -378,5 +396,4 @@ img {
             text-align: center;
         }
     }
-
 }
