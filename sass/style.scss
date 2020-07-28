@@ -1,4 +1,5 @@
 $black-color: #222527;
+$white-color: rgb(255, 251, 251);
 $lightBlack-color : #323232;
 $grey-color: #949494;
 $border: rgb(207, 207, 207);
@@ -17,15 +18,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: $black-color;
     font-weight: 300;
     width: 100%;
     margin: auto;
     max-width: 1440px;
-    border: $border solid 1px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $black-color;
+    perspective: 30em;
+    ;
+
 }
 
 
@@ -36,7 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
-    background-color: $black-color;
+    background-color: $white-color;
     z-index: 100;
 
     &__title {
@@ -51,7 +54,7 @@ body {
 
     &__text {
         margin-top: 0;
-        color: white;
+        color: $black-color;
         font-style: normal;
         font-weight: bold;
         font-size: 1.4rem;
@@ -69,12 +72,12 @@ body {
     &__link {
         margin: 0 10px;
         text-decoration: none;
-        color: $green-color;
+        color: $black-color;
         font-size: 1.4rem;
 
         &:hover {
-            color: white;
-            border-bottom: 1px solid white;
+            color: $green-color;
+            border-bottom: 1px solid $white-color;
 
 
         }
@@ -82,7 +85,7 @@ body {
 }
 
 .colored {
-    color: white;
+    color: $black-color;
     font-weight: bold;
     font-size: 1.9rem;
     letter-spacing: 0.04em;
@@ -119,7 +122,7 @@ body {
     position: relative;
     top: -99px;
     z-index: 50;
-    background-color: $black-color;
+    background-color: $white-color;
 
     @media (max-width: 768px) {
         top: -137px;
@@ -137,18 +140,88 @@ body {
     font-weight: lighter;
     letter-spacing: 2px;
     animation: opacity 1300ms;
-    background: linear-gradient(90deg, lighten($green-color, 15%), darken($green-color, 25%));
+    background: linear-gradient(90deg, lighten($black-color, 60%), darken($black-color, 60%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.lines {
+    position: absolute;
+    top: 52vh;
+    right: center;
+}
 
+
+@keyframes lines {
+    0% {
+        transform: translatex(0px) rotate(0deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translatex(120px) rotate(0deg) ;
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: translatex(-120px) rotate(-180deg);
+        opacity: 0.5;
+    }
+    75% {
+        transform: translatex(0px) rotate(-180deg);
+        opacity: 0.5;
+    }
+
+    85% {
+        transform:  translatex(0px) rotate(-180deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform:  translatex(0px) rotate(-180deg);
+        opacity: 0;
+    }
+}
+
+@for $i from 1 to 8 {
+    .line#{$i} {
+        width: 200px;
+        height: 1px;
+        background-color: black;
+        opacity: 0;
+        animation: lines 4s ease-in-out ($i * 220ms);
+        position: absolute ;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    @for $i from 1 to 8 {
+        .line#{$i} {
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            opacity: 0;
+            animation: lines 4s ease-in-out ($i * 220ms);
+            position: absolute ;
+            left: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .lines {
+        position: absolute;
+        top: 50vh;
+        right: center;
+    }
+}
 
 /* = TITLES */
 .portfolio__title,
 .stack__title,
-.work__title {
+.work__title,
+.formation__title {
     font-family: lato, sans-serif;
     font-size: 2.8rem;
     font-weight: lighter;
@@ -157,10 +230,11 @@ body {
 }
 
 .portfolio__title {
-    color: white;
+    color: $white-color;
 }
 
-.work__title {
+.work__title,
+.formation__title {
     color: $green-color;
 }
 
@@ -168,9 +242,10 @@ body {
 /*** = Stack ***/
 .stack {
     // background-color: $black-color;
-    background: repeating-linear-gradient(
-        -45deg, 
-        $black-color 0px, $black-color 40px, rgb(41, 41, 41) 40px , black 80px) ;
+    // background: repeating-linear-gradient(
+    //     -45deg, 
+    //     $black-color 0px, $black-color 40px, rgb(41, 41, 41) 40px , black 80px) ;
+    background-image: url(img/triangles-3334152_1920.png);
     color: $green-color;
     display: flex;
     flex-direction: column;
@@ -200,7 +275,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
-    color: white;
+    color: $white-color;
 
     &__items {
         font-size: 1.4rem;
@@ -211,7 +286,7 @@ body {
     }
 }
 
-.stackLink {
+.link {
     animation: opacity 800ms;
 }
 
@@ -220,6 +295,10 @@ body {
 /*** = Projects ***/
 #main {
     flex: 1;
+}
+
+#work {
+    min-height: 100vh;
 }
 
 .projects-container {
@@ -231,6 +310,7 @@ body {
     opacity: 0;
     padding: 32px 0;
     transition: opacity 600ms ease-in-out;
+    background-color: $black-color;
 }
 
 .project {
@@ -269,8 +349,41 @@ body {
     }
 
     &_description {
-        color: white;
+        color: $white-color;
         text-align: center;
+    }
+}
+
+/* = Formation  */
+.formation {
+    color: black;
+    background-color: $white-color;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 2px;
+
+    &__text {
+        font-size: 1.6em;
+        letter-spacing: 0.2em;
+    }
+}
+
+#formation-icons i {
+    margin: 0.6em;
+}
+
+#formation-icons {
+    height: 50vh;
+}
+
+@for $i from 1 to 11 {
+    .icons#{$i} {
+        position: relative;
+        animation: wave 4s infinite ease-in-out ($i * 100ms);
     }
 }
 
@@ -282,6 +395,7 @@ body {
     height: auto;
     margin: 0;
     padding: 20px 0px;
+    background-color: $black-color;
 
     &__link {
         font-family: lato, sans-serif;
@@ -292,7 +406,7 @@ body {
         text-decoration: none;
 
         &:hover {
-            color: white;
+            color: $white-color;
 
         }
     }
@@ -306,7 +420,8 @@ body {
 }
 
 .fab,
-.far {
+.far,
+.fas {
     font-size: 2.5rem;
     text-decoration: none;
 }
@@ -329,8 +444,8 @@ img {
     border: $green-color solid 1px;
 
     &:hover {
-        background-color: white;
-        border: white solid 1px;
+        background-color: $white-color;
+        border: $white-color solid 1px;
     }
 }
 
@@ -340,8 +455,8 @@ img {
     color: $green-color;
 
     &:hover {
-        color: white;
-        border: white solid 1px;
+        color: $white-color;
+        border: $white-color solid 1px;
     }
 }
 
@@ -379,6 +494,33 @@ img {
     }
 }
 
+@keyframes wave {
+    0% {
+        right: 0px;
+        transform: scale(1)
+    }
+
+    20% {
+        right: 0px;
+        transform: scale(1)
+    }
+
+    24% {
+        right: 20px;
+        transform: scale(1);
+    }
+
+    30% {
+        right: -70px;
+        transform: scale(0.2);
+    }
+
+    50% {
+        right: 0px;
+        transform: scale(1)
+    }
+}
+
 
 
 /* = Media queries */
@@ -396,4 +538,31 @@ img {
             text-align: center;
         }
     }
+
+    @keyframes wave {
+        0% {
+            transform: scale(1)
+        }
+
+        18% {
+            transform: scale(1)
+        }
+
+        25% {
+            transform: scale(1.1);
+        }
+
+        35% {
+            transform: scale(0.2);
+        }
+
+        50% {
+            transform: scale(1.1)
+        }
+
+        57% {
+            transform: scale(1)
+        }
+    }
+
 }

@@ -7,9 +7,6 @@ window.onscroll = function () {
     projectsAnimationOnReveal();
 };
 
-
-
-
 // affiche button de retour si viewport > 425
 // function scrollReveal() {
 //     if (document.documentElement.clientWidth > 425) {
@@ -33,7 +30,6 @@ let stackLink = document.querySelector(".stackLink");
 let stack = document.querySelector(".stack");
 stackLink.addEventListener("click", function (Event) {
     Event.preventDefault();
-    console.log('what?');
     stack.classList.toggle("toggle");
 });
 
