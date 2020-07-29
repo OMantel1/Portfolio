@@ -381,7 +381,9 @@ body {
 #formation-icons {
     height: 50vh;
 }
-
+.formation-container {
+    opacity: 0;
+}
 @for $i from 1 to 11 {
     .icons#{$i} {
         position: relative;

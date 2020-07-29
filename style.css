@@ -447,6 +447,10 @@ body {
   height: 50vh;
 }
 
+.formation-container {
+  opacity: 0;
+}
+
 .icons1 {
   position: relative;
   animation: wave 4s infinite ease-in-out 100ms;

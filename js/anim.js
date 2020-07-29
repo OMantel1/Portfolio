@@ -1,10 +1,12 @@
 let button = document.getElementById("btn");
 let footer = document.getElementById("contact");
 let projects = document.getElementById("projects-container");
+let studies = document.getElementById("formation-container");
 
 window.onscroll = function () {
     // scrollReveal();
-    projectsAnimationOnReveal();
+    projectsAnimationOnReveal(projects) ;
+    projectsAnimationOnReveal(studies) ;
 };
 
 // affiche button de retour si viewport > 425
@@ -48,10 +50,10 @@ function isElementInViewport(element) {
 }
 
 
-function projectsAnimationOnReveal(){
-    if(isElementInViewport(projects)){
-        projects.classList.add("revealAnimation");
+function projectsAnimationOnReveal(section){
+    if(isElementInViewport(section)){
+        section.classList.add("revealAnimation");
     } else {
-        projects.classList.remove("revealAnimation");
+        section.classList.remove("revealAnimation");
     }
 }
