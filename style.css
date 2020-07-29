@@ -50,6 +50,10 @@ body {
   animation: opacity 1000ms;
 }
 
+.headerBox a {
+  text-decoration: none;
+}
+
 .nav__box {
   padding: 10px 30px 10px 10px;
   animation: slide 800ms;
