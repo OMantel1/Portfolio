@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
-  background-color: #fffbfb;
+  background-color: white;
   z-index: 100;
 }
 
@@ -68,7 +68,7 @@ body {
 
 .nav__box__link:hover {
   color: #34D1BF;
-  border-bottom: 1px solid #fffbfb;
+  border-bottom: 1px solid white;
 }
 
 .colored {
@@ -87,7 +87,7 @@ body {
   position: relative;
   top: -99px;
   z-index: 50;
-  background-color: #fffbfb;
+  background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -303,7 +303,7 @@ body {
 }
 
 .portfolio__title {
-  color: #fffbfb;
+  color: white;
 }
 
 .work__title,
@@ -344,7 +344,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  color: #fffbfb;
+  color: white;
 }
 
 .stack__list__items {
@@ -417,14 +417,14 @@ body {
 }
 
 .project_description {
-  color: #fffbfb;
+  color: white;
   text-align: center;
 }
 
 /* = Formation  */
 .formation {
   color: black;
-  background-color: #fffbfb;
+  background-color: white;
   text-align: center;
   box-sizing: border-box;
   text-align: center;
@@ -521,7 +521,7 @@ body {
 }
 
 .contact__link:hover {
-  color: #fffbfb;
+  color: white;
 }
 
 @media (max-width: 320px) {
@@ -557,8 +557,8 @@ img {
 }
 
 .link-website:hover {
-  background-color: #fffbfb;
-  border: #fffbfb solid 1px;
+  background-color: white;
+  border: white solid 1px;
 }
 
 .link-github {
@@ -568,8 +568,8 @@ img {
 }
 
 .link-github:hover {
-  color: #fffbfb;
-  border: #fffbfb solid 1px;
+  color: white;
+  border: white solid 1px;
 }
 
 .revealAnimation {
