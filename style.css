@@ -363,6 +363,7 @@ body {
     justify-content: space-around; }
   .project_description {
     color: white;
+    padding: 8px;
     text-align: center; }
 
 /* = Formation  */
