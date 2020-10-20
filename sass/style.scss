@@ -63,6 +63,7 @@ body {
         text-transform: uppercase;
         animation: opacity 1000ms;
     }
+
     a {
         text-decoration: none;
     }
@@ -73,6 +74,7 @@ body {
     animation: slide 800ms;
 
     &__link {
+        position: relative;
         margin: 0 10px;
         text-decoration: none;
         color: $black-color;
@@ -87,6 +89,20 @@ body {
     }
 }
 
+.nav__box__link:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    border-bottom: solid $green-color 1px;
+    transition: 0.4s;
+}
+
+.nav__box__link:hover:after {
+    width: 100%;
+}
+
 .colored {
     color: $black-color;
     font-weight: bold;
@@ -94,25 +110,7 @@ body {
     letter-spacing: 0.04em;
 }
 
-// #btn {
-//     display: none;
-//     position: fixed;
-//     right: 0;
-//     bottom: 0;
-//     width: 30px;
-//     height: 30px;
-//     background-color: whitesmoke;
-//     border: none;
-//     box-shadow: 0px 0px 5px #1B1D1F;
-//     margin: 34px;
-//     text-align: center;
-// }
 
-// .fa-angle-up {
-//     color: grey;
-//     font-size: 2.8rem;
-//     padding-top: 0px;
-// }
 
 
 /* = Weclome section */
@@ -163,7 +161,7 @@ body {
     }
 
     25% {
-        transform: translatex(120px) rotate(0deg) ;
+        transform: translatex(120px) rotate(0deg);
         opacity: 0.2;
     }
 
@@ -171,17 +169,19 @@ body {
         transform: translatex(-120px) rotate(-180deg);
         opacity: 0.5;
     }
+
     75% {
         transform: translatex(0px) rotate(-180deg);
         opacity: 0.5;
     }
 
     85% {
-        transform:  translatex(0px) rotate(-180deg);
+        transform: translatex(0px) rotate(-180deg);
         opacity: 0.8;
     }
+
     100% {
-        transform:  translatex(0px) rotate(-180deg);
+        transform: translatex(0px) rotate(-180deg);
         opacity: 0;
     }
 }
@@ -193,7 +193,7 @@ body {
         background-color: black;
         opacity: 0;
         animation: lines 4s ease-in-out ($i * 220ms);
-        position: absolute ;
+        position: absolute;
         left: -100px;
     }
 }
@@ -206,7 +206,7 @@ body {
             background-color: black;
             opacity: 0;
             animation: lines 4s ease-in-out ($i * 220ms);
-            position: absolute ;
+            position: absolute;
             left: -50px;
         }
     }
@@ -243,10 +243,6 @@ body {
 
 /*** = Stack ***/
 .stack {
-    // background-color: $black-color;
-    // background: repeating-linear-gradient(
-    //     -45deg, 
-    //     $black-color 0px, $black-color 40px, rgb(41, 41, 41) 40px , black 80px) ;
     background-image: url(img/triangles-3334152_1920.png);
     color: $green-color;
     display: flex;
@@ -381,9 +377,11 @@ body {
 #formation-icons {
     height: 50vh;
 }
+
 .formation-container {
     opacity: 0;
 }
+
 @for $i from 1 to 11 {
     .icons#{$i} {
         position: relative;

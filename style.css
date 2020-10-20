@@ -49,6 +49,7 @@ body {
   padding: 10px 30px 10px 10px;
   animation: slide 800ms; }
   .nav__box__link {
+    position: relative;
     margin: 0 10px;
     text-decoration: none;
     color: #222527;
@@ -56,6 +57,18 @@ body {
     .nav__box__link:hover {
       color: #34D1BF;
       border-bottom: 1px solid white; }
+
+.nav__box__link:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  border-bottom: solid #34D1BF 1px;
+  transition: 0.4s; }
+
+.nav__box__link:hover:after {
+  width: 100%; }
 
 .colored {
   color: #222527;
