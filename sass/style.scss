@@ -1,8 +1,8 @@
 $black-color: #222527;
-$white-color: rgb(255, 255, 255);
+$white-color: #ffffff;
 $lightBlack-color : #323232;
 $grey-color: #949494;
-$border: rgb(255, 255, 255);
+$border: #ffffff;
 $main-color: #222527;
 $green-color: #34D1BF;
 $tangerine-color: #E99C86;
@@ -284,11 +284,6 @@ body {
     }
 }
 
-.link {
-    animation: opacity 800ms;
-}
-
-
 
 /*** = Projects ***/
 #main {
@@ -319,7 +314,7 @@ body {
     margin: auto;
 
     :hover {
-        opacity: 0.90;
+        opacity: 0.96;
         transform: opacity;
     }
 
@@ -330,6 +325,7 @@ body {
         position: absolute;
         font-size: 1.2rem;
         background-color: $black-color;
+        padding-bottom: 8px;
         top: 0;
         left: 0;
         right: 0;
@@ -337,21 +333,70 @@ body {
         opacity: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         transition: 200ms ease-in-out;
     }
 
     &_links {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     &_description {
         color: $white-color;
-        padding: 8px;
-        text-align: center;
+        padding: 0 8px;
+        text-align: left;
+    }
+    &_description > h3 {
+        font-weight: lighter;
+        font-size: 16px;
     }
 
+    &_stack {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_stack > p {
+        background-color: lighten($grey-color, 40%);
+        color: $black-color;
+        border-radius: 8px;
+        padding: 0 6px;
+        margin: 2px 4px 2px 0;
+    }
+
+    &_stack > p, &_links {
+        font-weight: bolder;
+    }
+}
+
+.link {
+    font-size: 1rem;
+    padding: 2px 16px;
+    margin: 0 8px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.link-website {
+    color: $black-color;
+    background-color: $green-color;
+    border: $green-color solid 1px;
+
+    &:hover {
+        background-color: $white-color;
+        border: $white-color solid 1px;
+    }
+}
+
+.link-github {
+    background-color: $black-color;
+    border: $green-color solid 1px;
+    color: $green-color;
+
+    &:hover {
+        color: $white-color;
+        border: $white-color solid 1px;
+    }
 }
 
 /* = Formation  */
@@ -434,34 +479,7 @@ img {
 }
 
 
-.link {
-    font-size: 1rem;
-    padding: 2px 16px;
-    margin: 0 8px;
-    text-decoration: none;
-}
 
-.link-website {
-    color: $black-color;
-    background-color: $green-color;
-    border: $green-color solid 1px;
-
-    &:hover {
-        background-color: $white-color;
-        border: $white-color solid 1px;
-    }
-}
-
-.link-github {
-    background-color: $black-color;
-    border: $green-color solid 1px;
-    color: $green-color;
-
-    &:hover {
-        color: $white-color;
-        border: $white-color solid 1px;
-    }
-}
 
 .revealAnimation {
     transition: opacity 800ms ease-in-out;
