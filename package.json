@@ -4,7 +4,7 @@
   "description": "Olivier Mantel Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "sass": "sass --watch ./sass/style.scss:style.css"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/OMantel1/Portfolio/issues"
   },
-  "homepage": "https://github.com/OMantel1/Portfolio#readme"
+  "homepage": "https://github.com/OMantel1/Portfolio#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
