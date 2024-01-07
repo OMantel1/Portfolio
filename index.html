@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Olivier Mantel, développeur web">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Olivier Mantel - Portfolio </title>
+
+</head>
+
+<body>
+
+    <header class="headerBox">
+        <section>
+            <a href="https://omantel1.github.io/Portfolio/">
+                <h1 class="headerBox__title">PORTFOLIO <span class="colored">DEVELOPPEUR FRONT-END </span></h1>
+                <p class="headerBox__text">Olivier Mantel</p>
+            </a>
+        </section>
+
+        <nav class="nav__box">
+            <!-- <a class="nav__box__link stackLink" href="">Accueil.</a> -->
+            <!-- <a class="nav__box__link" href="#projets">Projets.</a> -->
+            <a class="nav__box__link" href="#work">Projets.</a>
+            <a class="nav__box__link stackLink" href="">Stack.</a>
+            <a class="nav__box__link" href="#formation">Formation.</a>
+            <a class="nav__box__link" href="https://omantel1.github.io/Cv-Olivier-Mantel/" target="_blank"
+                rel="noopener">CV.</a>
+            <!-- <a class="nav__box__link" href="#contact">Contact.</a> -->
+        </nav>
+    </header>
+
+    <!-- <div id="btn"><i class="fas fa-angle-up"></i></div> -->
+
+    <div id="main">
+
+        <section class="welcome">
+            <h2 class="welcome-title">Bienvenue sur mon portfolio</h2>
+            <div class="lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+                <div class="line7"></div>
+                <div class="line8"></div>
+            </div>
+        </section>
+
+
+        <section class="stack toggle">
+            <h2 class="stack__title">STACK TECHNIQUE</h2>
+            <div>
+                <ul class="stack__list">
+                    <li class="stack__list__items">Html & Css</li>
+                    <li class="stack__list__items">Sass</li>
+                    <li class="stack__list__items">Bootstrap</li>
+                    <li class="stack__list__items">Vue.js</li>
+                    <li class="stack__list__items">Javascript</li>
+                    <li class="stack__list__items">Node.js</li>
+                    <li class="stack__list__items">Git</li>
+                    <li class="stack__list__items">MongoDb</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- projets réalisés -->
+        <section id="work">
+            <h2 class="work__title">PROJETS</h2>
+            <div id="projects-container" class="projects-container">
+                <article class="project">
+                    <img src="img/reactNews-full-square.png" alt="projet react">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>News</h3>
+                            <div class="project_stack">
+                                <p>React.js</p>
+                                <p>Javascript</p>
+                            </div>
+                            <p>News</p>
+                            <p>Utilisation de l'api Gnews, récupération des dernieres news, possibilité de filtrer par source</p>
+                            <p>App deployée sur Vercel</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://react-news-git-main-omantel1.vercel.app/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/react-news" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img src="img/todolist-full-square.png" alt="projet Todolist">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Todo List</h3>
+                            <div class="project_stack">
+                                <p>Vue.js</p>
+                                <p>Javascript</p>
+                            </div>
+                            <p>Todo list</p>
+                            <p>Ajout / suppression d'un todo, selection d'une couleur de fond, stockage dans localStorage, animations</p>
+                            <p>App deployée sur Vercel</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://todolist-app-1nw1x2lq3.vercel.app/#/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/todolist-app" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project p6">
+                    <img src="img/E-commerce-basket-full-square.png" alt="projet E-commerce">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>E-commerce</h3>
+                            <div class="project_stack">
+                                <p>Html</p>
+                                <p>Sass</p>
+                                <p>Javascript</p>
+                                <p>Jest</p>
+                            </div>
+                            <p>FrontEnd pour site E-commerce</p>
+                            <p>Affichage des produits, options, validation de formulaire, affichage du panier, api
+                                requests, localStorage, tests</p>
+                            
+                            <p>Api deployée sur Heroku</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://omantel1.github.io/javascript-Ecommerce/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/javascript-Ecommerce" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+
+
+                <article class="project p8">
+                    <img src="img/groupomania-full-square.png" alt="réseau social">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Social Network</h3>
+                            <div class="project_stack">
+                                <p>Vue.js</p>
+                                <p>Javascript</p>
+                                <p>Node.js</p>
+                                <p>Express</p>
+                                <p>Sequelize</p>
+                                <p>Sql</p>
+                            </div>
+                            <p>Réalisation du Front et d'une api pour un réseau social d'entreprise</p>
+                            <p>Creation de compte, connexion, Ajout/suppression de posts et commentaires, page admin, token</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://github.com/OMantel1/64497812RS" class="link link-github" target="_blank"
+                                rel="noopener"> VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project ">
+                    <img src="img/insure-landing-page-square.png" alt="landing page">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Landing page</h3>
+                            <div class="project_stack">
+                                <p>Html</p>
+                                <p>Sass</p>
+                            </div>
+                            <p>Réalisation d'une landing page pour FrontEnd Mentor Challenge</p>
+                            <p>Site responsive, menu mobile hamburger pure css, effets sur hover, grid, flex, variables</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://omantel1.github.io/insure-landing-page/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/insure-landing-page" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class=" project p7">
+                    <img src="img/lca-full-square.png" alt="amélioration seo">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Amélioration Seo / Accessibilité</h3>
+                            <div class="project_stack">
+                                <p>Html</p>
+                                <p>Css</p>
+                            </div>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://omantel1.github.io/Projet-LCA/index.html" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href=" https://github.com/OMantel1/Projet-LCA" class="link link-github" target="_blank"
+                                rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project p5">
+                    <img src="img/sage-femme-full-square.png" alt="project sage femme">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Site vitrine sage-femme</h3>
+                            <div class="project_stack">
+                                <p>Html</p>
+                                <p>Sass</p>
+                            </div>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://omantel1.github.io/Site-Vitrine-SageFemme/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/Site-Vitrine-SageFemme" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project">
+                    <img src="img/huddle-landing-page-full-square.png" alt="landing page">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Landing page</h3>
+                            <div class="project_stack">
+                                <p>Html</p>
+                                <p>Sass</p>
+                            </div>
+                            <p>Réalisation d'une landing page pour FrontEnd Mentor Challenge</p>
+                            <p>Site responsive, animations, effets sur hover, grid, flex, variables</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://huddle-landing-page-flax.vercel.app" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/huddle-landing-page" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project p4">
+                    <img src="img/Sauce-piquante-2-full-square.png" alt="api avis gastronomiques">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Api pour une application d'avis gastronomiques</h3>
+                            <div class="project_stack">
+                                <p>Node.js</p>
+                                <p>Express</p>
+                                <p>MongoDb</p>
+                            </div>
+                            <p>Inscription, connexion, Ajout/modification/suppression de produits, système de like</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://github.com/OMantel1/DWP6" class="link link-github" target="_blank"
+                                rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project p3">
+                    <img src="img/portfolio-capture-calc-square.png" alt="portfolio">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Calculatrice Javascript</h3>
+                            <div class="project_stack">
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://github.com/OMantel1/Calculatrice-js" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project p2">
+                    <img src="img/generateur-de-menus-full-square.png" alt="générateur de menus">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Générateur de menus</h3>
+                            <div class="project_stack">
+                                <p>Javascript</p>
+                            </div>
+                            <p>Génération aléatoire de menus pour 7 jours</p>
+                            <p>Json, filter, Math.random, fetch</p>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://omantel1.github.io/Generateur-de-menu-js/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/Generateur-de-menu-js" class="link link-github"
+                                target="_blank" rel="noopener">VOIR LE CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project p1">
+                    <img src="img/cv-full-square.png" alt="cv">
+                    <div class="project-overlay">
+                        <div class="project_description">
+                            <h3>Cv</h3>
+                            <div class="project_stack">
+                                <p>Html</p>
+                                <p>Sass</p>
+                            </div>
+                        </div>
+                        <div class="project_links">
+                            <a href="https://omantel1.github.io/Cv-Olivier-Mantel/" class="link link-website"
+                                target="_blank" rel="noopener">VOIR LE SITE</a>
+                            <a href="https://github.com/OMantel1/Cv-Olivier-Mantel" class="link link-github">VOIR LE
+                                CODE</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="formation" id="formation">
+            <h2 class="formation__title">FORMATION</h2>
+            <div id="formation-container" class="formation-container">
+                <div>
+                    <p class="formation__text">Freecodecamp Responsive Web Design Certification</p>
+                    <p class="formation__text">Openclassrooms Développeur Web Enregistré au RNCP, Niveau 5, Bac+2.</p>
+                    <p class="formation__text">Openclassrooms Intégrateur web Blocs de compétences n°1, 2 et 3 du titre
+                        "Développeur web"</p>
+                </div>
+                <div id="formation-icons">
+                    <i class="fas fa-graduation-cap icons1"></i>
+                    <i class="fab fa-free-code-camp icons2"></i>
+                    <i class="fab fa-js-square icons3"></i>
+                    <i class="fab fa-css3-alt icons4"></i>
+                    <i class="fab fa-html5 icons5"></i>
+                    <i class="fab fa-sass icons6"></i>
+                    <i class="fab fa-bootstrap icons7"></i>
+                    <i class="fab fa-vuejs icons8"></i>
+                    <i class="fas fa-mobile-alt icons9"></i>
+                    <i class="fas fa-desktop icons10"></i>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+    <!-- footer -->
+    <footer id="contact" class="contact">
+        <a class="contact__link" href="http://linkedin.com/in/OlivierMantel" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin"></i></a>
+        <a class="contact__link" href="https://github.com/OMantel1" target="_blank" rel="noopener"><i
+                class="fab fa-github"></i></a>
+        <a class="contact__link" href="https://www.freecodecamp.org/omantel" target="_blank" rel="noopener"><i
+                class="fab fa-free-code-camp"></i></a>
+
+
+
+    </footer>
+
+
+
+    <script src="js/anim.js" type="module">
+    </script>
+
+</body>
+
+</html>
